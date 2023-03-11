@@ -7,5 +7,22 @@
     <title>Document</title>
   </head>
 
-  <body></body>
+  <body>
+    <h1 id="saludo">HOLA MUNDO!!!</h1>
+    <button id="saludarBtn">Saludar</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+    //   document.getElementById("saludo").innerHTML =
+    //     "<strong> Hello There </Strong>";
+    //   document.getElementById("saludarBtn").addEventListener("click", () => {
+    //     document.getElementById("saludo").innerHTML =
+    //       "<strong> Hello There </Strong>";
+    //   });
+    $(document).ready(() =>{
+        $('#saludarBtn').click(() => {
+            $('#saludo').html('<strong>Hello there!!!</strong>');
+        });
+    });
+    </script>
+  </body>
 </html>
